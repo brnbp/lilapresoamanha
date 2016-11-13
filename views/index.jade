@@ -11,18 +11,15 @@ body
         div.row.text-center
             div.col-md-12
                 h1.head-main Lila preso amanha
-                h2.head-sub-main lila é lindo
+                h4.head-sub-main a web novel story by @_fransuel
 
     section.color-white#about
         div.container
-            thead
-                tr: th 
-            tbody
-                each tweet, i in tweets
-                    tr
-                        td
-                            span #{tweet.text}
-                            hr
+            each tweet, i in tweets
+                div.row.text-center
+                    div.col-md-8.col-md-offset-2
+                        span.text #{tweet.text}
+                        hr
 
 
     script(src="/plugins/jquery-1.10.2.js")

@@ -1,32 +1,9 @@
-﻿/*=============================================================
-    Authour URI: www.binarytheme.com
-    License: Commons Attribution 3.0
-
-    http://creativecommons.org/licenses/by/3.0/
-
-    100% To use For Personal And Commercial Use.
-    IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
-   
-    ========================================================  */
-
-
-
-/*=======================================
-    GENERAL STYLES
-==================================================*/
-body {
-          font-family:'Open Sans', sans-serif;
+﻿body {
+    font-family:'Open Sans', sans-serif;
     font-size:14px;
-  background-color:#9B60DB;
+    background-color:#9B60DB;
 }
 
-.nav a {
-    color:#ffffff !important;
-}
-.navbar-header a {
-    color:#ffffff !important;
-    padding-right:100px;
-}
 
 .text-center {
     text-align:center;
@@ -58,25 +35,10 @@ h4 {
     padding-bottom:15px;
 }
 
-p {
-    font-weight:300;
-    line-height:30px;
-    padding-bottom:20px;
-}
-
-.space-free {
-    height:100px;
-}
-
-
 section {
     padding-top:50px;
     padding-bottom:30px;
 }
-
-/*=======================================
-    COLOR CODES
-==================================================*/
 .color-white {
    background-color:#fff!important;
 }
@@ -88,9 +50,6 @@ section {
    background-color:#E9E9E9!important;
 }
 
-/*=======================================
-    HEADER STYLES
-==================================================*/
 .head-main {
     font-size:80px !important;
     font-weight:900!important;
@@ -104,73 +63,6 @@ section {
     padding:5px 20px 150px 20px;
 }
 
-
-/*=======================================
-    NAVIGATION STYLES
-==================================================*/
-
-
-nav {
-	position: absolute;
-	width: 100%;
-    background: #fff;
-    z-index:99;
-}
-.fixed {
-	position: fixed; 
-	top: 0; 
-	min-height: 50px; 
-	z-index: 99;
-}
-
-.navbar-inverse {
-background-color: #000000;
-border-color: #000000;
-min-height: 80px;
-padding-top: 10px;
-font-size: 18px;
-}
-.navbar-brand {
-
-font-size: 30px;
-}
-
-/*=======================================
-    WORK FLOW STYLES
-==================================================*/
-
-
-.work-div {
-	width: 100%;
-	border: 0;
-    padding:20px;
-    margin-bottom:30px;
-}
-/*=======================================
-    CONTACT STYLES
-==================================================*/
-
-#social-icon a {
-    color:#616161!important;
-    margin-right:10px;
-}
-.contact-cls {
-    font-size:20px;
-    line-height:40px;
-}
-.cnt {
-width: 100%;
-min-height: 350px;
-border: 1px solid #e1e1e1;
-}
-/*=======================================
-    FOOTER STYLES
-==================================================*/
-
-
-#footer {
-    background-color:#000;
-    color:#fff;
-    padding:20px 50px 20px 50px;
-    text-align:right;
+.text{
+    font-size: 24px;
 }
