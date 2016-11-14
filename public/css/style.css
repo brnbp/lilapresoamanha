@@ -71,12 +71,7 @@ section {
 }
 
 a {
-  color: #c6c6c6;
-}
-
-a:hover {
   color: white;
-  text-decoration:none;
 }
 
 
@@ -90,10 +85,19 @@ a:hover {
 #about {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
   padding-left: 10px;
-  padding-right: 10px;
+  padding-right: 15px;
 }
 
 @media (max-width: 570px) {
+
+  .container {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  #about {
+    padding-right: 15px;
+  }
 
   #home {
       background: white url('/img/lila.jpeg') no-repeat top;
