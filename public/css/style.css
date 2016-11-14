@@ -66,3 +66,12 @@ section {
 .text{
     font-size: 24px;
 }
+
+a {
+  color: #c6c6c6;
+}
+
+a:hover {
+  color: white;
+  text-decoration:none;
+}
