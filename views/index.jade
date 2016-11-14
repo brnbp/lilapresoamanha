@@ -10,22 +10,22 @@ html
         link(href='https://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet')
 body
 
-    div.container#home
-        div.row.text-center
+    div.container
+        div.row.text-center#home
             div.col-md-12
                 h1.head-main lila preso amanha
                 h4.head-sub-main a web novel by 
                   a(href="https://twitter.com.br/_fransuel") @_fransuel
 
-    section.color-white#about
-        div.container
-            each tweet, i in tweets
-                div.row.text-center
-                    div.col-md-8.col-md-offset-2
+        section.color-white#about
+            div
+                each tweet, i in tweets
+                    div.row.text-center
+                        div.col-md-8.col-md-offset-2
+                            
+                            if tweet.text.startsWith('CAPITULO')
+                              h2.chapter !{tweet.text}
+                            else 
+                              span.text !{tweet.text}
                         
-                        if tweet.text.startsWith('CAPITULO')
-                          h2.chapter !{tweet.text}
-                        else 
-                          span.text !{tweet.text}
-                    
-                        hr
+                            hr

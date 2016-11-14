@@ -1,7 +1,7 @@
 ﻿body {
     font-family:'Open Sans', sans-serif;
     font-size:14px;
-    background-color:#9B60DB;
+    background-color: #607D8B;
 }
 
 
@@ -63,7 +63,7 @@ section {
     font-size:40px !important;
     font-weight:600!important;
     color:#fff!important;
-    padding:40px 20px 70px 20px;
+    padding:40px 20px 50px 20px;
 }
 
 .text{
@@ -80,23 +80,33 @@ a:hover {
 }
 
 
+#home {
+    width: 100%;
+    background: white url('/img/lila2.jpeg') no-repeat;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+#about {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 @media (max-width: 570px) {
 
   #home {
-      background-image: url('/img/lila.jpeg');
-      background-repeat: no-repeat;
-      background-position: center top;
-
+      background: white url('/img/lila.jpeg') no-repeat top;
   }
 
   .head-main {
-    font-size:30px !important;
-    padding:15px 20px 0px 20px;
+    font-size:26px !important;
+    padding:0 20px 0px 20px;
   }
 
   .head-sub-main {
       font-size:18px !important;
-      padding:0px 20px 20px 20px;
+      padding:0px 20px 0 20px;
   }
 
   .text{
