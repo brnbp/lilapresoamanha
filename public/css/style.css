@@ -54,13 +54,13 @@ section {
     font-size:80px !important;
     font-weight:900!important;
     color:#fff!important;
-    padding:150px 20px 10px 20px;
+    padding:50px 20px 10px 20px;
 }
 .head-sub-main {
     font-size:40px !important;
     font-weight:600!important;
     color:#fff!important;
-    padding:5px 20px 150px 20px;
+    padding:40px 20px 70px 20px;
 }
 
 .text{
@@ -80,10 +80,12 @@ a:hover {
 @media (max-width: 570px) {
   .head-main {
     font-size:30px !important;
+    padding:25px 20px 10px 20px;
   }
 
   .head-sub-main {
-      font-size:20px !important;
+      font-size:18px !important;
+      padding:0px 20px 25px 20px;
   }
 
   .text{
