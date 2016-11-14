@@ -2,6 +2,7 @@ const bodyParser = require('body-parser')
 const request = require('request')
 var path = require('path');
 const fs = require('fs')
+const favicon = require('serve-favicon');
 const express = require('express')
 const app = express()
 
@@ -9,6 +10,7 @@ app.use(bodyParser.json())
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'jade')
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(favicon(path.join(__dirname,'public','favicon.ico')));
 
 const consumerKey = process.env.KEY
 const consumerSecret = process.env.SECRET
