@@ -39,16 +39,13 @@ function getTweetsLila(){
       content.map(e => tweets.push(e))
       console.log('one done')
 
-
       const lastId = content[content.length - 1].id
-      //tweets.push(content)
 
       getTweets(lastId, function (e, r, b) {
         if (r.statusCode === 200 && b) {
           const content = Array.from(b)
           content.map(e => tweets.push(e))
           const lastId = content[content.length - 1].id
-          //fs.appendFile('./tweets', ',' + JSON.stringify(b))
           console.log('two done')
 
           getTweets(lastId, function (e, r, b) {
