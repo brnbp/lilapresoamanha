@@ -18,5 +18,10 @@ body
             each tweet, i in tweets
                 div.row.text-center
                     div.col-md-8.col-md-offset-2
-                        span.text !{tweet.text}
+                        
+                        if tweet.text.startsWith('CAPITULO')
+                          h1.chapter !{tweet.text}
+                        else 
+                          span.text !{tweet.text}
+                    
                         hr
