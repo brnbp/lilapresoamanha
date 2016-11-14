@@ -19,10 +19,9 @@ app.get('/', function(req, res){
   fs.readFile('./tweets', 'utf8', function(err, data){
     if (err) throw err;
 
-    const obj = JSON.parse(data.split("\n").join("<hr>"))
+    const obj = JSON.parse(data)
 
     const tweets = obj.filter(item => !item.text.startsWith('https://'))
-    //console.log(tweets.map(i => console.log(i.text)))
 
     res.render('index', {tweets: tweets.reverse()})
     res.end()
