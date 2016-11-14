@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     line-height:80px;
     font-weight:900;
-    font-size:60px;
+    font-size:50px;
     padding:30px 20px 10px 20px;
 }
 h2 {
@@ -64,7 +64,7 @@ section {
 }
 
 .text{
-    font-size: 24px;
+    font-size: 22px;
 }
 
 a {
@@ -74,4 +74,19 @@ a {
 a:hover {
   color: white;
   text-decoration:none;
+}
+
+
+@media (max-width: 570px) {
+  .head-main {
+    font-size:30px !important;
+  }
+
+  .head-sub-main {
+      font-size:20px !important;
+  }
+
+  .text{
+      font-size: 18px;
+  }
 }

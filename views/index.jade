@@ -1,5 +1,9 @@
 html
     head
+        
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        
         title lila preso amanha
         link(href='/css/bootstrap.css', rel='stylesheet')
         link(href='/css/style.css', rel='stylesheet')
@@ -20,7 +24,7 @@ body
                     div.col-md-8.col-md-offset-2
                         
                         if tweet.text.startsWith('CAPITULO')
-                          h1.chapter !{tweet.text}
+                          h2.chapter !{tweet.text}
                         else 
                           span.text !{tweet.text}
                     
